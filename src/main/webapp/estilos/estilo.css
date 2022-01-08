@@ -1,0 +1,198 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11/09/2021, 12:19:41 a. m.
+    Author     : Daniel Segura
+*/
+
+*{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-primary: 'Roboto', sans-serif; 
+    --font-secondary: 'Public Sans', sans-serif;
+
+    --color-primario: #f5af19;
+    --color-secundary: #f12711;
+    --color-base: #1d1d1f;
+
+}
+.colorTwo{
+    color: var(--color-secundary);
+}
+body{
+    font-family:  var(--font-secondary);
+    color:var(--color-base);
+}
+
+h1, h2{
+    font-family:  var(--font-primary); 
+    margin: 1em 0em;
+    text-align: center;
+    color: var(--color-primario)
+}
+
+h2, .form-group{
+    margin: 0.5em auto;
+}
+
+.titulo{
+    color: var(--color-base);
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+form, .cards{
+    margin: 2em;
+    background-color: white;
+    border-radius: 2em;
+    border: 0.5px solid var(--color-primario);
+    padding: 1em;
+}
+
+input[type="text"],input[type="number"], select, textArea{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0.3em 0.5em;
+    width: 95%;
+    border:none;
+    border-bottom: 0.5px solid var(--color-primario);
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1em;
+    padding: 0.1em;
+    fill:var(--color-primario);
+}
+input[type="text"]:focus,input[type="number"]:focus, select:focus, textArea:focus{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    font-family: var(--font-primary);
+    font-size: 1em; 
+    outline: 0;
+    border-bottom: 2px solid var(--color-primario);
+}
+
+textArea{
+    border: 0.5px solid var(--color-primario);
+    height: 10em;
+    border-radius: 0.5em;
+}
+
+input[type="radio"]{
+    width: auto;
+    margin: 1em 0.5em 1em; 
+}
+
+.span {
+    font-family:  var(--font-secondary);
+    border-radius: 0.5em;
+    height: 2.5em;
+    content: '';
+    text-align: center;
+    width: 95%;
+    margin: 0.3em 0.5em;
+    color: var(--color-primario);
+    border: 0.5px solid var(--color-primario);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.span:hover {   
+    color: #fff;
+    background-color: var(--color-primario);
+    border: 0.5px solid var(--color-primario);
+}
+
+
+.oculto{
+    display: none;
+}
+
+/* Botones */
+
+button{
+    font-family:  var(--font-secondary);
+    border-radius: 0.5em;
+    border: 0.5px solid var(--color-primario);
+    padding: 0.5em;
+    
+    color: #fff;
+    background-color: var(--color-primario);
+    margin: 0.5em 1em;
+}
+
+button:hover,
+button:focus{
+
+    color: var(--color-primario);
+    border: 0.5px solid var(--color-primario);
+    background-color: #fff;
+}
+
+
+.botonB{
+    
+    color: var(--color-primario);
+    border: 0.5px solid var(--color-primario);
+    background-color: #fff;
+    
+}
+
+.botonB:hover,
+.botonB:focus{
+
+    color: #fff;
+    border: 0.5px solid var(--color-primario);
+    background-color: var(--color-primario);
+}
+
+nav{
+    padding: 0.8em 0em;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-base);
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-secundary);
+    margin: 0 1em;
+}
+
+
+@media (max-width: 600px) {
+    form{
+        margin: 0.5em;
+    }
+    input, select{
+        width: 100%;
+    }
+}
+
+
+
+.display {
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
